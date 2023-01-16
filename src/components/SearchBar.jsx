@@ -1,6 +1,6 @@
 import { useState, React } from "react";
 import { useNavigate } from "react-router-dom";
-import { Paper, IconButton } from "@mui/material";
+import { Paper, IconButton, TextField } from "@mui/material";
 import { Search } from "@mui/icons-material";
 
 const SearchBar = () => {
@@ -27,13 +27,17 @@ const SearchBar = () => {
         pl: 2,
         boxShadow: "none",
         mr: { sm: 5 },
+        
+        
       }}
     >
-      <input
+      <TextField
+      id="outlined-error" label="Search" variant="standard"
         className="search-bar"
-        placeholder="Search..."
+        
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
+       style={{backgroundColor: 'palette.background.paper', border: 'none', boxShadow: "none", color: 'red'}}
       />
       <IconButton type="submit" sx={{ p: "10px", color: "red" }} aria-label='search'>
         <Search />

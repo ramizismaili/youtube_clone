@@ -17,6 +17,8 @@ const ChannelCard = ({ channelDetail, marginTop }) => {
         height: "326px",
         margin: "auto",
         marginTop,
+        bgcolor: 'default',
+        color: 'default',
       }}
     >
       <Link to={`/channel/${channelDetail?.id.channelId}`}>
@@ -26,7 +28,7 @@ const ChannelCard = ({ channelDetail, marginTop }) => {
             flexDirection: "column",
             justifyContent: "center",
             textAlign: "center",
-            color: "#fff",
+            color: "gray",
           }}
         >
           <CardMedia
@@ -41,9 +43,10 @@ const ChannelCard = ({ channelDetail, marginTop }) => {
               width: "180px",
               mb: 2,
               border: "1px solid #e3e3e3",
+              bgcolor: 'default'
             }}
           />
-          <Typography variant="h6">
+          <Typography variant="h6" color= 'text.primary'>
             {channelDetail?.snippet?.title}
             <CheckCircle sx={{ fontSize: 14, color: "gray", ml: "5px" }} />
           </Typography>

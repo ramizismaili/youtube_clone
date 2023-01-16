@@ -19,12 +19,12 @@ const Sidebar = ( { selectedCategory, setSelectedCategory}) => (
         onClick={() => setSelectedCategory(category.name)}
         style={{
           background: category.name === selectedCategory && "#fc1503",
-          color: "white",
+          color: "mode",
         }}
         key={category.name}
       >
         <span style={{ color: category.name === selectedCategory ? 'white' : 'red', marginRight: '15px'}}>{category.icon}</span>
-        <span style={{ opacity: category.name === selectedCategory ? '1' : '0.8'}}>{category.name}</span>
+        <span style={{ opacity: category.name === selectedCategory ? '1' : '0.8', color: category.name === selectedCategory ? 'white' : 'gray'}}>{category.name}</span>
       </button>
     ))}
   </Stack>
