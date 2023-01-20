@@ -2,7 +2,11 @@
 
  A React JS application consisting of stunning video sections, custom categories, channel pages, video details, with the ability to play videos and with dark/light theme by material UI.
  
+ Dark Mode
 ![Captsascasure](https://user-images.githubusercontent.com/101756045/213540368-9a9dc115-77bf-402e-a3de-273afdc44e5d.PNG)
+
+Light Mode
+![youtubelight](https://user-images.githubusercontent.com/101756045/213594067-f96c8dc1-11f2-4886-9dff-93ace1c9ba71.PNG)
 
 
 # Getting Started with Create React App
